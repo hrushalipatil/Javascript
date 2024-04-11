@@ -16,7 +16,7 @@
 //         console.log("C")
 //     },3000)
 // }
-// function addD(){
+// function addD(){ 
 //     console.log("D")
 // }
 // addC()
