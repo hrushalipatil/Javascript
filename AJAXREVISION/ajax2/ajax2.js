@@ -58,25 +58,25 @@ let user = {
 // 1 . User k action pr data dikhna chahiye 
 
 
-// function getUser(){
-//     user.data.forEach(function(element){
+function getUser() {
+    user.data.forEach(function (element) {
 
-//         document.write(`<h2>${element.first_name}${element.last_name}</h2>`)
-//         document.write(`<p>${element.id}${element.email}</p>`)
-//         document.write(`<Img src=${element.avatar}>`)
-    
-//     })
-// }
+        document.write(`<h3>fullName: ${element.first_name} ${element.last_name}</h3>`)
+        document.write(`<p>Email: ${element.id}${element.email}</p>`)
+        document.write(`<Img src=${element.avatar}>`)
 
-// let userButton = document.querySelector('button')
-// userButton.addEventListener('click',function(){
-//      getUser()
-// })
-// // getUser()
+    })
+}
+
+let userButton = document.querySelector('button')
+userButton.addEventListener('click', function () {
+    getUser()
+})
+getUser()
 
 
 
-// 2. 
+// 2.
 
 
 // function GetUserPage(page){
@@ -89,14 +89,14 @@ let user = {
 //         document.write(`<h2>${element.first_name}${element.last_name}</h2>`)
 //         document.write(`<p>${element.id} ${element.email}</p>`)
 //         document.write(`<Img src=${element.avatar}>`)
-    
-            
+
+
 //         });
 //     })
 // }
 
 // // //  GetUserPage(2)
-// let userButton = document.querySelector("button") 
+// let userButton = document.querySelector("button")
 
 // userButton.addEventListener("click",function(){
 //     GetUserPage(2)
@@ -107,35 +107,35 @@ let user = {
 
 // Id find kareni ho ...
 
-function GetUserId(userId) {
-    fetch(`https://reqres.in/api/users/${userId}`)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(response) {
-            let user = response.data;
+// function GetUserId(userId) {
+//     fetch(`https://reqres.in/api/users/${userId}`)
+//         .then(function (response) {
+//             return response.json();
+//         })
+//         .then(function (response) {
+//             let user = response.data;
 
-            if (user) {
-                document.write(`<h2>${user.first_name} ${user.last_name}</h2>`);
-                document.write(`<p>ID: ${user.id} ${user.email}</p>`);
-                document.write(`<img src=${user.avatar} alt="User Avatar">`);
-            } 
-            else {
-                document.write(`<p>User with ID ${userId} not found.</p>`);
-            }
-        })
-        .catch(function(error) {
-            console.error('Error fetching user data:', error);
-            document.write(`<p>Error fetching user data for ID ${userId}.</p>`);
-        });
-}
+//             if (user) {
+//                 document.write(`<h2>${user.first_name} ${user.last_name}</h2>`);
+//                 document.write(`<p>ID: ${user.id} ${user.email}</p>`);
+//                 document.write(`<img src=${user.avatar} alt="User Avatar">`);
+//             }
+//             else {
+//                 document.write(`<p>User with ID ${userId} not found.</p>`);
+//             }
+//         })
+//         .catch(function (error) {
+//             console.error('Error fetching user data:', error);
+//             document.write(`<p>Error fetching user data for ID ${userId}.</p>`);
+//         });
+// }
 
-let userButton = document.querySelector("button");
+// let userButton = document.querySelector("button");
 
-userButton.addEventListener("click", function() {
-    GetUserId(10);
+// userButton.addEventListener("click", function () {
+//     GetUserId(10);
 
-    GetUserId(8)
-});
+//     GetUserId(8)
+// });
 
 
