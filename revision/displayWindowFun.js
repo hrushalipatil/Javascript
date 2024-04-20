@@ -13,25 +13,25 @@ let info={
 info.DisplayName()
 
 
-var firsName = "vijeet"
-var lastName = "dani"
-// console.log(window.firstName)
-// console.log(window.lastName)
+var firsName = "vrushali"
+var lastName = "patil"
+console.log(window.firstName)
+console.log(window.lastName)
 
-// let amol = {
-//     firsName:"amol",
-//     lastName:"rao",
-//     displayName:function(){
-//         // this --- amol
-//         console.log(this.firsName + this.lastName) // amolrao
-//         let displayName2 = function(){
-//             // this ---> window
-//             console.log(this.firsName + this.lastName) // vijeetdani
-//         }
-//         displayName2()
-//     }
-// }
-// amol.displayName()
+let info1 = {
+    firsName:"aboli",
+    lastName:"wandhare",
+    displayName:function(){
+        // this --- aboliii
+        console.log(this.firsName + this.lastName) // aboliwandhare
+        let displayName2 = function(){
+            // this ---> window
+            console.log(this.firsName + this.lastName) // vrushalipatil
+        }
+        displayName2()
+    }
+}
+amol.displayName()
 
 
 // program 2
