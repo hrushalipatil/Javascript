@@ -4,9 +4,7 @@
 let names = ["vrushali","kabir","coco","sanjeet"]
 // Index always starts from zero
 
-// Type -- Human ---- samiksha
-// Properties - age , color , gender
-// Methods    - talk() , walk()
+
 
 let  A= names.length
 console.log(A)

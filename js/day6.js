@@ -6,11 +6,6 @@
 //ternary operator==> single line code
 //switch case ==> multiple condition
 
-
-//1-7 days 
-//1 ==> monday
-//2 tuesday
-
 // //1. switch case without break
 
 // let days = 2
