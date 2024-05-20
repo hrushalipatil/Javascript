@@ -87,8 +87,3 @@
 // let numbersB = [44,55,66]
 // let E= numbersA.concat(numbersB)
 // console.log(E)
-
-
-
-
-

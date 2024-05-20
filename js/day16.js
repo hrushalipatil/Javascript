@@ -30,7 +30,7 @@
 // //action ==> perform action woth each and every element
 // //return ==>  new array
 
-
+ 
 // let add4=number.map(function (element, index, array) {
 //    return  element + 4
 // })
@@ -132,7 +132,7 @@
 //           0  1  2  3  4  5   6  7  8  9
 let names = [11,22,33,44,55,66,77,88,99,100]
 // [55,77,88,88,99,100]
-
+ 
 //filter
 
 let C = names.filter(function(el){
@@ -169,3 +169,4 @@ let G = nums.some(function(el,index,arr){
 console.log(G)
 
 
+ 

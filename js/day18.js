@@ -219,8 +219,8 @@
 // console.log(A)
 
 // // 2. flat()
-//                    0                    1                     2
-//                0        1          0         1          0          1
+//                         0                    1                     2
+//                     0        1          0         1          0          1
 // let statesA = [["NAGPUR","WARDHA"],["JAIPUR","UDAIPUR"],["BANGLORE","MYSORE"]]
 // let X = statesA.flat()
 // console.log(X)
@@ -229,7 +229,6 @@
 
 // at()
 // let calender= ["jan","feb","march","april","may","june"]
-
 // //console.log(calander[-2])
 // let C= calender.at(2)
 // console.log(C)

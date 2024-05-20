@@ -1,5 +1,3 @@
-
-
 //backend data
 //api call => data => frontend
 
