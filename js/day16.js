@@ -52,17 +52,20 @@
 
 // // 2. seprate a numbers and alphabates of string 
 
-// let string =["a" ,1,"a",2,"s",3,"m" ,4,"l",5]
+let string =["a" ,1,"a",2,"s",3,"m" ,4,"l",5]
 
-// let A= string.filter(function(element,index,array){
-//          return element>=0      
-//     })
-// console.log(A)
+let A= string.filter(function(element,index,array){
+         return element>=0      
+    })
+console.log(A)
 
-// let B= string.filter(function(element,index,array){
-//     return element<="string"   
-// })
-// console.log(B)
+let B= string.filter(function(element,index,array){
+    return element<="string"   
+})
+console.log(B)
+
+// [ 1, 2, 3, 4, 5 ]
+// [ 'a', 'a', 's', 'm', 'l' ]
 
 
 // //reduce()
