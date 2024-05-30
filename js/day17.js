@@ -1,6 +1,6 @@
 // slice   ====> array
 //               0      1       2      3        4
-// let color = ["pink","yellow","white","green","black"]
+let color = ["pink","yellow","white","green","black"]
 //             -5      -4      -3       -2     -1
 // console.log(color[0])
 // //names.slice(startIndex,endIndex(not included))
@@ -15,7 +15,7 @@
 // console.log(color.slice(-1))
 
 // console.log(color.slice(3))
-// console.log(color.slice(4))
+// console.log(color.slice(-9))
 // console.log(color.slice(5)) //empty arrey
 // console.log(color.slice(2))
 // console.log(color.slice(1))

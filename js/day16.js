@@ -49,7 +49,7 @@
 //    return element>60
 // })
 // console.log(greter60)
-
+     
 // // 2. seprate a numbers and alphabates of string 
 
 let string =["a" ,1,"a",2,"s",3,"m" ,4,"l",5]
@@ -67,14 +67,14 @@ console.log(B)
 // [ 1, 2, 3, 4, 5 ]
 // [ 'a', 'a', 's', 'm', 'l' ]
 
-
+            
 // //reduce()
 
 // let marks = [2, 3, 4, 5, 6, 7, 8, 9]
 
 // let sum = marks.reduce(function (acc, element, index, array) {
 //    return acc + element
-// },0)
+// },0)            
 
 // console.log(sum)
 
@@ -87,7 +87,7 @@ console.log(B)
 
 //welcome vrushali
 //welcome sanjeet
-//welcom kabir
+//welcom kabir 
 //welcome shruti
 
 // for(let i=0;i<student.length;i++){
