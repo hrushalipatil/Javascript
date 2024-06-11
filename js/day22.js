@@ -1,4 +1,4 @@
-//
+2//
 let details = ['vrushali','patil','nagpur',23,8530420563]
 
 // retrive

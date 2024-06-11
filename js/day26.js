@@ -165,7 +165,7 @@ P1.forEach(function(el){
 let ss=students.filter(function (el) {
     return el.fullName == "ankit"
 })
-console.assert(ss)
+console.log(ss)
 ss.forEach(function (el) {
     console.log(el.fullName + " : " + el.skills.length)
 })
