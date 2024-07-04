@@ -74,7 +74,7 @@ Synchronous js ==> line to line*/
                          
 //2. promises
 
-function getUser(){
+function  getUser(){
     setTimeout(function(){
         console.log("User Create")
         setTimeout(function(){
@@ -87,6 +87,7 @@ function getUser(){
     },4000)
 }
 getUser()
+
 // output:
 // User Create
 // Get ID

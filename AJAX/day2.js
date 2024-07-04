@@ -51,7 +51,7 @@ pro1
 
     }, function (arr) {
         console.log(arr[2])
-    })
+     })
 
 // program 3 ====
 
