@@ -41,6 +41,7 @@ class Renter{
     }
 } 
 
+
 class Owner extends Renter{
     constructor(firstName,lastname,aadharnumber,payment){
         super(firstName,lastname,aadharnumber) 
@@ -105,4 +106,5 @@ console.log(Vrushali.TeacherName)  //tejas
 Vrushali.displayPrincipal()      //i am principal(shekhar raddy)of Priyadarshani collage
 Vrushali.displayVice_Principal() //i am Viceprincipal(gautami)of Priyadarshani collage
 Vrushali.displayTeacher()        //i am Teacher(tejas)of Priyadarshani collage
+
 
