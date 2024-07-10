@@ -1,18 +1,18 @@
-function getUserPage(pageNumber) {
-    return fetch(`https://reqres.in/api/users?page=${pageNumber}`)
-        .then(function (response) {
-            console.log(response)
-            return response.json()
+// function getUserPage(pageNumber) {
+//     return fetch(`https://reqres.in/api/users?page=${pageNumber}`)
+//         .then(function (response) {
+//             console.log(response)
+//             return response.json()
 
-        })
-        .then(function (response) {
-            console.log(response.data) 
-            console.log(response.data[2].id)
-            return response.data[2].id
-        })
+//         })
+//         .then(function (response) {
+//             console.log(response.data) 
+//             console.log(response.data[2].id)
+//             return response.data[2].id
+//         })
 
 
-}
+// }
 // getUserPage(1)
 function getUserById(id){
     return fetch(`https://reqres.in/api/users/${id}`)

@@ -73,22 +73,41 @@ let Userinfo = {
 // ===================================================================================================
 
 
+// function GetUserInfo(pageNumber){
+//     // let userId = document.getElementById("userId").value
+//     fetch(`https://reqres.in/api/users?page=${pageNumber}`)
+//     .then(function(response){
+//         return response.json()
+//     }).then(function(){
+//         response.data.forEach(function (el) {
+//             document.write(`<h1>${el.id}<h1>`)
+//             document.write(`<h2>${el.first_name}${el.last_name}<h2>`)
+//             document.write(`<h2>${el.email}<h2>`)
+//             document.write(`<img src=${el.avatar}>`)
+//         })
+//     })
 
-let button = document.querySelector('button')
+// }
+// GetUserInfo()
+// ------------------------------------------------------------------
 
-function GetUserInfo(pageNumber){
-    // let userId = document.getElementById("userId").value
+let Button = document.querySelector('button')
+
+Button.addEventListener('click', function (pageNumber) {
     fetch(`https://reqres.in/api/users?page=${pageNumber}`)
-    .then(function(response){
-        return response.json()
-    }).then(function(){
-        response.data.forEach(function (el) {
-            document.write(`<h1>${el.id}<h1>`)
-            document.write(`<h2>${el.first_name}${el.last_name}<h2>`)
-            document.write(`<h2>${el.email}<h2>`)
-            document.write(`<img src=${el.avatar}>`)
-        })
-    })
 
-}
-GetUserInfo()
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (response) {
+            console.log(response.data)
+            response.data.forEach(el => {
+                document.write(`<h2>fullName : ${el.first_name}  ${el.last_name}</h2>`)
+                document.write(`<p> email: ${el.email}</p>`)
+                document.write(`<h3> id : ${el.id}<h3>`)
+                document.write(`<img src=${el.avatar}>`)
+
+            });
+
+        })
+})
