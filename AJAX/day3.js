@@ -154,6 +154,6 @@ async function details(){
     console.log(a2)
     let a3=await getInfo()
     console.log(a3)
-}
+} 
 
 details()

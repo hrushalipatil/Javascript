@@ -91,23 +91,62 @@ let Userinfo = {
 // GetUserInfo()
 // ------------------------------------------------------------------
 
-let Button = document.querySelector('button')
+// let Button = document.querySelector('button')
 
-Button.addEventListener('click', function (pageNumber) {
-    fetch(`https://reqres.in/api/users?page=${pageNumber}`)
+// Button.addEventListener('click', function (pageNumber) {
+//     fetch(`https://reqres.in/api/users?page=${pageNumber}`)
 
-        .then(function (response) {
+//         .then(function (response) {
+//             return response.json()
+//         })
+//         .then(function (response) {
+//             console.log(response.data)
+//             response.data.forEach(el => {
+//                 document.write(`<h2>fullName : ${el.first_name}  ${el.last_name}</h2>`)
+//                 document.write(`<p> email: ${el.email}</p>`)
+//                 document.write(`<h3> id : ${el.id}<h3>`)
+//                 document.write(`<img src=${el.avatar}>`)
+
+//             });
+
+//         })
+// })
+
+
+
+function getUserById(id){
+     fetch(`https://reqres.in/api/users/${id}`)
+        .then(function(response){
             return response.json()
-        })
-        .then(function (response) {
-            console.log(response.data)
-            response.data.forEach(el => {
-                document.write(`<h2>fullName : ${el.first_name}  ${el.last_name}</h2>`)
-                document.write(`<p> email: ${el.email}</p>`)
-                document.write(`<h3> id : ${el.id}<h3>`)
-                document.write(`<img src=${el.avatar}>`)
 
-            });
-
+        }).then(function(response){
+            return response.data
         })
+
+}
+function htmlRender(el){
+    document.write(`<h1>${el.first_name}</h1>`)
+    document.write(`<h1>${el.last_name}</h1>`)
+    document.write(`<p>${el.email}</p>`)
+    document.write(`<h1>${el.id}<h1>`)
+    document.write(`<img src=${el.avatar}>`)
+}
+
+
+getUserPage(1)
+.then(function(id){
+    console.log(id)
+    return getUserById(id)
 })
+.then(function(obj){
+    // console.log(el)
+    renderHtml(obj)
+})
+
+// async function getUserInfo(pageNumber){
+//     let id =  await getUserPage(pageNumber)
+//     let user   = await getUserById(id)
+//     renderHtml(user)
+//  }   
+ 
+//  getUserInfo(2)

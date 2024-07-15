@@ -42,7 +42,7 @@
 //     console.log(response)
 //     renderHtml(response)
 // })
-
+ 
 
 function getUserId(pageNumber) {
     return fetch(`https://reqres.in/api/users?page=${pageNumber}`)
