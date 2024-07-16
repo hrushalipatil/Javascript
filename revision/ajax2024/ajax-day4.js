@@ -86,42 +86,41 @@ function getMultipleUser(pageNumber) {
 
 
 
-// // SingleUser
-// function getSingleUser(id) {
-//     return fetch(`https://reqres.in/api/users/${id}`)
-//         .then(function (res) {
-//             return res.json()
-//         })
-//         .then(function (res) {
-//             return (res.data)
-//         })
-// }
-// //getSingleUser()
+// SingleUser
+function getSingleUser(id) {
+    return fetch(`https://reqres.in/api/users/${id}`)
+        .then(function (res) {
+            return res.json()
+        })
+        .then(function (res) {
+            return (res.data)
+        })
+}
+//getSingleUser()
 
 
-// //ShowInfo
-// function showInfo(el) {
-//         document.write(`<h1> ID : ${el.id}<h1>`)
-//         document.write(`<h3> FullName: ${el.first_name}${el.last_name}<h3>`)
-//         document.write(`<h3> Gmail: ${el.email}<h3>`)
-//         document.write(`<img src=${el.avatar}>`)
+//ShowInfo
+function showInfo(el) {
+        document.write(`<h1> ID : ${el.id}<h1>`)
+        document.write(`<h3> FullName: ${el.first_name}${el.last_name}<h3>`)
+        document.write(`<h3> Gmail: ${el.email}<h3>`)
+        document.write(`<img src=${el.avatar}>`)
 
-// }
+}
 
-// getMultipleUser(2)
-//     .then(function (response) {
-//         console.log(response) // // (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+getMultipleUser(2)
+    .then(function (response) {
+        console.log(response) // // (6) [{…}, {…}, {…}, {…}, {…}, {…}]
 
-//         getId = response[5].id   // 12
-//         return getSingleUser(getId)
-//     })
-//     .then(function (response) {
-//         console.log(response) // {data: {…}, support: {…}, ad: null
-//         showInfo(response)
-//     })
+        getId = response[5].id   // 12
+        return getSingleUser(getId)
+    })
+    .then(function (response) {
+        console.log(response) // {data: {…}, support: {…}, ad: null
+        showInfo(response)
+    })
 
 //asynch await
-
 // async function info(){
 //     let dataArray=await getMultipleUser(1)
 //     let idUserInfo=await getSingleUser(dataArray[4].id)
