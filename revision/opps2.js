@@ -67,7 +67,3 @@ console.log(F)
 F.getFirstName()
 F.getLastName()
 
-console.log("Hello")
-console.log("Hello")
-console.log("Hello")
-console.log("Hello")
